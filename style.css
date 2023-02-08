@@ -64,9 +64,43 @@ nav ion-icon {
     padding-right: 10px;
 }
 
-body {
-    background-color: #025930da;
+.main {
+    position: fixed;
+    margin-left: 250px;
+    width: 83.7vw;
+    height: 100vh;
+    background-color: #111927;
     background-image: 
-        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
-        radial-gradient(at 82% 65%, #111927 0, transparent 55%;
+        radial-gradient(at 62% 53%, hsl(162.00, 77%, 20%) 0, transparent 70%), 
+        radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%)
+}
+
+.main__area {
+    margin-top: 80px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.topo__fatura h1, a {
+    font-family: sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.text-topo__fatura {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.add__fatura {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.container-add__fatura {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
 }
