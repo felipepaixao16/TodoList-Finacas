@@ -33,7 +33,10 @@
 }
 
 .side__name {
-    color: #FFFFFF;
+    border-radius: 5px;
+    background: #d0c330;
+    color: #1b1a1a;
+    padding: 2.5px 8px;
 }
 
 .menu {
@@ -50,6 +53,7 @@ nav a {
     width: 250px;
     color: #FFFFFF;
     font-weight: bold;
+    font-family: sans-serif;
     text-align: center;
     text-decoration: none;
     line-height: 70px;
@@ -57,7 +61,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #0dc344;
+    background: #d0c330;
 }
 
 nav ion-icon {
@@ -81,7 +85,14 @@ nav ion-icon {
     margin-right: 200px;
 }
 
-.topo__fatura h1, a {
+.topo__fatura {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid #e0eb92b4;
+}
+
+.topo__fatura h1 {
     font-family: sans-serif;
     color: white;
     text-transform: uppercase;
@@ -89,18 +100,25 @@ nav ion-icon {
 
 .text-topo__fatura {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 22px;
+    margin-bottom: 30px;
 }
 
-.add__fatura {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.container-add__fatura {
+.tela {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+}
 
+.teladefundo {
+    width: 900px;
+    height: 540px;
+    border-radius: 10px;
+    margin-top: 25px;
+    backdrop-filter: blur(2px) saturate(180%);
+    -webkit-backdrop-filter: blur(2px) saturate(180%);
+    background-color: rgba(251, 251, 251, 0.404);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 5px 5px #7b7a7a50;
 }

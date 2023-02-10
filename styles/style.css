@@ -1,0 +1,157 @@
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100vw;
+    border-right: 1px solid #111111;
+    background-image: url('https://images.pexels.com/photos/1547836/pexels-photo-1547836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+}
+
+.card {
+    position: fixed;
+    width: 250px;
+    height: 80vw;
+    backdrop-filter: blur(2px) saturate(180%);
+    -webkit-backdrop-filter: blur(2px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.side__img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+.side__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.side__name {
+    border-radius: 5px;
+    background: #d0c330;
+    color: #1b1a1a;
+    padding: 2.5px 8px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 250px;
+}
+
+nav a {
+    display: block;
+    width: 250px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+    line-height: 70px;
+    box-sizing: border-box;
+}
+
+nav a:hover {
+    background: #d0c330;
+}
+
+nav ion-icon {
+    padding-right: 10px;
+}
+
+.main {
+    position: fixed;
+    margin-left: 250px;
+    width: 83.7vw;
+    height: 100vh;
+    background-color: #111927;
+    background-image: 
+        radial-gradient(at 62% 53%, hsl(162.00, 77%, 20%) 0, transparent 70%), 
+        radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%)
+}
+
+.main__area {
+    margin-top: 80px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.topo__fatura {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid #e0eb92b4;
+}
+
+.topo__fatura h1 {
+    font-family: sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.text-topo__fatura {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.input__area {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 525px;
+}
+
+.add__fatura-container {
+    position: relative;
+    line-height: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    padding: 6px 22px;
+    border-radius: 50px;
+    background: #d0c330;
+    text-align: center;
+}
+
+.add__fatura {
+    display: inline-flex;
+    margin-left: 3px;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 13px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.icon__add {
+    font-size: 30px;
+}
+
+.tela {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teladefundo {
+    width: 900px;
+    height: 540px;
+    border-radius: 10px;
+    margin-top: 25px;
+    backdrop-filter: blur(2px) saturate(180%);
+    -webkit-backdrop-filter: blur(2px) saturate(180%);
+    background-color: rgba(251, 251, 251, 0.404);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 5px 5px #7b7a7a50;
+}

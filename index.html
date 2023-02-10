@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--RESETAR CSS-->
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../TodoList-Finanças/styles/reset.css">
     <!--ESTILIZAR MINHA PÁGINA-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../TodoList-Finanças/styles/style.css">
     <title>Finanças Pessoais</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
         <!--IMAGEM PRINCIPAL-->
         <section class="sidebar" #sidebar>
             <div class="side__img-div">
-                <a href="#"><img src="imagens/FelipeAlves-IA.png" alt="" class="side__img"></a>
+                <a href="#"><img src="../TodoList-Finanças/imagens/FelipeAlves-IA.png" alt="" class="side__img"></a>
                 <span class="side__name">Felipe Paixão</span>
             </div>
 
@@ -23,7 +23,7 @@
                 <nav class="menu">
                     <div class="menu-div">   
                             <a href="#" class="menu__link"><ion-icon name="barcode-outline"></ion-icon><span class="menu__name">Faturas</span></a>
-                            <a href="#" class="menu__link"><ion-icon name="wallet-outline"></ion-icon><span class="menu__name">Economias</span></a>
+                            <a href="./pages/economias.html" class="menu__link"><ion-icon name="wallet-outline"></ion-icon><span class="menu__name">Economias</span></a>
                             <a href="#" class="menu__link"><ion-icon name="cash-outline"></ion-icon><span class="menu__name">Investimento</span></a>
                             <a href="#" class="menu__link"><ion-icon name="receipt-outline"></ion-icon><span class="menu__name">Planos</span></a>
                     </div>
@@ -40,12 +40,25 @@
        <section class="main__area">
         <aside class="topo__fatura">
             <h1 class="text-topo__fatura">Faturas</h1>
-
-            <div class="container-add__fatura">
-                <a href="#" class="add__fatura">Nova Fatura</a>
+            <div class="input__area">
+                <datalist id="filtros">
+                    <option value="Nubank"></option>
+                    <option value="C6bank"></option>
+                    <option value="Itau"></option>
+                </datalist>
+                <input type="text" list="filtros" name="cartao" placeholder="Filtrar Cartão" size="10">
+            </div>
+            <div class="add__fatura-container">
+                <a href="#" class="add__fatura"><ion-icon name="add-circle-outline" class="icon__add"></ion-icon>Nova Fatura</a>
             </div>
         </aside>
        </section> 
+
+       <section class="tela">
+        <div class="teladefundo">
+
+        </div>
+       </section>
     </main>
 </body>
 </html>
