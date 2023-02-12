@@ -46,7 +46,7 @@
                     <option value="C6bank"></option>
                     <option value="Itau"></option>
                 </datalist>
-                <input type="text" list="filtros" name="cartao" placeholder="Filtrar Cartão" size="10">
+                <input id="filtro" type="text" list="filtros" name="cartao" placeholder="Filtrar Cartão" size="10">
             </div>
             <div class="add__fatura-container">
                 <a href="#" class="add__fatura"><ion-icon name="add-circle-outline" class="icon__add"></ion-icon>Nova Fatura</a>
@@ -56,7 +56,13 @@
 
        <section class="tela">
         <div class="teladefundo">
-
+            <div class="faturas">
+                <input id="filtro__fatura" name="cartao" type="text">
+                <input id="data" type="text">
+                <input id="loja" type="text">
+                <input id="valor" type="text">
+                <input id="status" type="text">
+            </div>
         </div>
        </section>
     </main>

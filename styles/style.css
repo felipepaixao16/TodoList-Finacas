@@ -145,6 +145,7 @@ nav ion-icon {
 }
 
 .teladefundo {
+    position: relative;
     width: 900px;
     height: 540px;
     border-radius: 10px;
@@ -154,4 +155,21 @@ nav ion-icon {
     background-color: rgba(251, 251, 251, 0.404);
     border: 1px solid rgba(255, 255, 255, 0.125);
     box-shadow: 5px 5px #7b7a7a50;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.faturas {
+    position: absolute;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    width: 870px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
