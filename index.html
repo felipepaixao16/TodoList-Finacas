@@ -40,31 +40,39 @@
        <section class="main__area">
         <aside class="topo__fatura">
             <h1 class="text-topo__fatura">Faturas</h1>
-            <div class="input__area">
-                <datalist id="filtros">
-                    <option value="Nubank"></option>
-                    <option value="C6bank"></option>
-                    <option value="Itau"></option>
-                </datalist>
-                <input id="filtro" type="text" list="filtros" name="cartao" placeholder="Filtrar Cartão" size="10">
+            <div class="filter">
+                <select id="filter__select">
+                    <option value="all">Todos</option>
+                    <option value="nubank">Nubank</option>
+                    <option value="c6bank">C6bank</option>
+                    <option value="itau">Itaú</option>
+                </select>
             </div>
-            <div class="add__fatura-container">
-                <a href="#" class="add__fatura"><ion-icon name="add-circle-outline" class="icon__add"></ion-icon>Nova Fatura</a>
-            </div>
+
+                <button type="button" class="add__fatura" id="add__fatura"><ion-icon name="add-circle-outline" class="icon__add"></ion-icon>Nova Fatura</button>
         </aside>
        </section> 
 
        <section class="tela">
         <div class="teladefundo">
-            <div class="faturas">
-                <input id="filtro__fatura" name="cartao" type="text">
-                <input id="data" type="text">
-                <input id="loja" type="text">
-                <input id="valor" type="text">
-                <input id="status" type="text">
+            <div class="todo__list">
+                <form id="todo__form" action="">
+                    <div class="todo">
+                        <aside>
+                            <h3>#Nubank</h3>
+                            <p class="todo-text__color">16/02/2023</p>
+                            <p class="todo-text__color">Lojas Americanas</p>
+                            <p>R$: 25,00</p>
+                            <button id="check" onclick="button__checking()" class="button__check"><ion-icon name="radio-button-on-outline"
+                                class="icon__check"></ion-icon>Pendente</button>
+                            <i><ion-icon name="chevron-forward-outline"></ion-icon></i>
+                        </aside>
+                    </div>
+                </form>
             </div>
         </div>
        </section>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
