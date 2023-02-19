@@ -195,7 +195,7 @@ nav ion-icon {
     cursor: pointer;
 }
 
-.button__check:active {
+.active {
     background: #17ea3058;
     color: #17ea29;
     border: 2px solid #17ea29;

@@ -85,23 +85,58 @@ nav ion-icon {
     margin-right: 200px;
 }
 
-.topo__fatura {
+.topo__plano {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     border-bottom: 1px solid #e0eb92b4;
 }
 
-.topo__fatura h1 {
+.topo__plano h1 {
     font-family: sans-serif;
     color: white;
     text-transform: uppercase;
 }
 
-.text-topo__fatura {
+.text-topo__plano {
     font-weight: bold;
     font-size: 22px;
     margin-bottom: 30px;
+}
+
+.filter {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 525px;
+}
+
+.add__plano {
+    position: relative;
+    display: inline-flex;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background: #d0c330;
+    color: white; 
+    cursor: pointer; 
+    transition: 0.5s;
+}
+
+.add__plano:hover {
+    background: #66881e;
+}
+
+.icon__add {
+    font-size: 30px;
+    margin-right: 13px;
+    pointer-events: none;
 }
 
 .tela {
@@ -121,4 +156,50 @@ nav ion-icon {
     background-color: rgba(251, 251, 251, 0.404);
     border: 1px solid rgba(255, 255, 255, 0.125);
     box-shadow: 5px 5px #7b7a7a50;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.todo {
+    width: 870px;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #395169;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    margin: 5px 30px 5px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.todo button {
+    margin-right: 0.4rem;
+    cursor: pointer;
+    background: #d0c33067;
+    border: 2px solid #d0c330;
+}
+
+.todo button:hover {
+    background: #66881e;
+}
+
+.done {
+    background: #111927;
+}
+
+.done h3 {
+    color: #FFFFFF;
+    text-decoration: line-through;
+    font-style: italic;
 }

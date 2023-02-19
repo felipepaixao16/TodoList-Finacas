@@ -1,5 +1,8 @@
-document.getElementById("button__checking").addEventListener("click", check);
+document.addEventListener("click", (e) => {
+    const targetEl = e.target;
+    const parentEl = targetEl.closest("div");
 
-function check() {
-    document.getElementById("button__checking").innerHTML = "Pago"
-}
+    if (targetEl.classList.contains("active")) {
+        parentEl.classList.toggle("check");
+    }
+});

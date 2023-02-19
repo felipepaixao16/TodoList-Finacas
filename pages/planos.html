@@ -7,7 +7,9 @@
     <!--RESETAR CSS-->
     <link rel="stylesheet" href="../styles/reset.css">
     <!--ESTILIZAR MINHA PÁGINA-->
-    <link rel="stylesheet" href="../styles/economias.css">
+    <link rel="stylesheet" href="../styles/planos.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Planos</title>
 </head>
 <body>
@@ -38,17 +40,51 @@
 
     <main class="main">
         <section class="main__area">
-         <aside class="topo__fatura">
-             <h1 class="text-topo__fatura">Planos</h1>
+         <aside class="topo__plano">
+             <h1 class="text-topo__plano">Planos</h1>
+             <div class="filter">
+                <select id="filter__select">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">Pendentes</option>
+                </select>
+            </div>
+
+             <button type="button" class="add__plano" id="add-plano"><ion-icon name="add-circle-outline" class="icon__add"></ion-icon>Novo Plano</button>
          </aside>
+
         </section> 
  
         <section class="tela">
-         <div class="teladefundo">
-            <div>
-                
-              
-         </div>
+            <div class="teladefundo">
+                <div class="container-box">
+                    <form id="todo-form">
+                        <p>Adicione sua tarefa</p>
+                        <div class="form-control">
+                            <input type="text" id="todo-input" placeholder="O que você vai fazer?">
+                            <button type="submit"><i class="fa-thin fa-plus"></i></button>
+                            <button id="cancel-edit-btn"><i class="fa-light fa-square-xmark"></i>Cancelar</button>
+                        </div>
+                    </form>
+                    <div id="todo-list">
+                        <aside class="container-todo">
+                            <div class="todo done">
+                                <h3>Estou fazendo alguma coisa</h3>          
+                                <button class="finish-todo"><i class="fa-solid fa-check"></i></button>
+                                <button class="edit-todo"><i class="fa-solid fa-pen"></i></button>
+                                <button class="remove-todo"><i class="fa-solid fa-xmark"></i></button>
+                            </div>       
+                            
+                            <div class="todo">
+                                <h3>Ser contratado como DEV.</h3>          
+                                <button class="finish-todo"><i class="fa-solid fa-check"></i></button>
+                                <button class="edit-todo"><i class="fa-solid fa-pen"></i></button>
+                                <button class="remove-todo"><i class="fa-solid fa-xmark"></i></button>
+                            </div> 
+                        </aside>
+                    </div>
+                </div>
+            </div>
         </section>
         <script src="../configs.js/planos.js"></script>
 </body>
