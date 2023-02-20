@@ -49,26 +49,48 @@
                 </select>
             </div>
 
-                <button type="button" class="add__fatura" id="add__fatura"><ion-icon name="add-circle-outline" class="icon__add"></ion-icon>Nova Fatura</button>
+                <button type="button" class="add__fatura" id="add-fatura"><ion-icon name="add-circle-outline" class="icon__add"></ion-icon>Nova Fatura</button>
         </aside>
        </section> 
 
        <section class="tela">
         <div class="teladefundo">
             <div class="todo__list">
-                <form id="todo__form" action="">
-                    <div class="todo">
+                <form id="todo__form">
+                    <div class="todo done">
                         <aside>
                             <h3>#Nubank</h3>
-                            <p class="todo-text__color">16/02/2023</p>
+                            <p class="todo-text-date">16/02/2023</p>
                             <p class="todo-text__color">Lojas Americanas</p>
                             <p>R$: 25,00</p>
-                            <button id="check" class="button__check active"><ion-icon name="radio-button-on-outline"
+                            <button type="button" id="check" class="button__check active"><ion-icon name="radio-button-on-outline"
                                 class="icon__check"></ion-icon>Pago</button>
                             <a href="#"><i><ion-icon name="chevron-forward-outline"></ion-icon></i></a>
                         </aside>
                     </div>
                 </form>
+            </div>
+
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2>Nova Fatura</h2>
+                        <span class="modal-close" id="modal-close">&#10006;</span>
+                    </header>
+                    <form id="todo-form">
+                        <p>Adicione sua fatura</p>
+                        <div class="form-control">
+                            <input type="text" id="todo-input" class="modal-field" placeholder="#Cartão">
+                            <input type="date" id="todo-input" class="modal-field" placeholder="Data da compra">
+                            <input type="text" id="todo-input" class="modal-field" placeholder="Estabelecimento">
+                            <input type="number" id="todo-input" class="modal-field" placeholder="Valor">
+                            <button type="button" id="check" class="button__check active"><ion-icon name="radio-button-on-outline"
+                                class="icon__check"></ion-icon>Pago</button>
+                            <button type="submit" class="criar">Criar</button>
+                            <button id="cancel-edit-btn" type="reset" class="button close">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
        </section>

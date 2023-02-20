@@ -1,8 +1,11 @@
-document.addEventListener("click", (e) => {
-    const targetEl = e.target;
-    const parentEl = targetEl.closest("div");
+const openModal = () => document.getElementById('modal')
+    .classList.add('active')
 
-    if (targetEl.classList.contains("active")) {
-        parentEl.classList.toggle("check");
-    }
-});
+const closeModal = () => document.getElementById('modal')
+    .classList.remove('active')
+
+document.getElementById('add-fatura')
+	.addEventListener('click', openModal)
+
+document.getElementById('modal-close')
+	.addEventListener('click', closeModal)
