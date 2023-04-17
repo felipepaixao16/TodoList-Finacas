@@ -3,7 +3,6 @@ const todoInput = document.querySelector("#todo-input");
 const todoList = document.querySelector("#todo-list");
 const editForm = document.querySelector("#edit-form");
 const editInput = document.querySelector("#edit-input");
-const editPlano = document.querySelector("#edit-plano");
 const modalEdit = document.querySelector("#modaledit");
 const cancelEditBtn = document.querySelector("#cancel-edit-btn");
 const filterBtn = document.querySelector("#filter-select");
@@ -11,6 +10,15 @@ const filterBtn = document.querySelector("#filter-select");
 let oldInputValue;
 
 //Funções
+const openModaledit = () => document.querySelector("#modaledit")
+    .classList.add('active')
+
+const closeModaledit = () => document.querySelector("#modaledit")
+    .classList.remove('active')
+
+document.getElementById('modal-close-edit')
+    .addEventListener('click', closeModaledit)
+
 
 const saveTodo = (text, done = 0, save = 1) => {
     const todo = document.createElement("div");
@@ -136,8 +144,9 @@ document.addEventListener("click", (e) => {
     }
 
     if (targetEl.classList.contains("edit-todo")) {
+        openModaledit();
         toggleForms();
-
+    
         editInput.value = todoTitle;
         oldInputValue = todoTitle;
     }
